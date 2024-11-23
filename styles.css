@@ -9,3 +9,21 @@
     flex: 1 0 calc(100% / 16);
     border: 1px solid #ddd; 
 }
+
+/* add style for the resize button*/
+.resize-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease; 
+}
+
+.resize-button:hover {
+    background-color: #0056b3; 
+}
+

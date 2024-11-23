@@ -11,7 +11,7 @@ for (let i = 0; i < gridSize * gridSize; i++) {
 // add event listner for mouseover for hoover effect
 document.querySelectorAll('.square').forEach((square) => {
     square.addEventListener('mouseover', () => {
-        square.style.backgroundColor = 'black';
+        square.style.backgroundColor = getRandomColor();
     });
 });
 
@@ -36,9 +36,17 @@ button.addEventListener('click', () => {
     // Add hover effect
     document.querySelectorAll('.square').forEach((square) => {
         square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'black';
+            square.style.backgroundColor = getRandomColor();
         });
-    });
+    }); 
 });
+
+// random rgb color
+function getRandomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r},${g},${b})`;
+}
 
 
